@@ -1,0 +1,892 @@
+{
+	"info": {
+		"_postman_id": "27fa1b1a-ca0c-4ad7-a07b-addc4a9bdd9a",
+		"name": "web-service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27794851"
+	},
+	"item": [
+		{
+			"name": "MAHASISWA API",
+			"item": [
+				{
+					"name": "Menampilkan semua data mahasiswa",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjg5NzkwMDgwLCJleHAiOjE2ODk3OTM2ODAsIm5iZiI6MTY4OTc5MDA4MCwianRpIjoiNVA3M1hpdzFEa0xQbEdxSyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.q7WKSjcqGK57XztlEquOBsWxKFSaivUqjU0g_uTGg_s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/mahasiswa",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"mahasiswa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "tambah mahasiswa",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjg5NzkwOTk0LCJleHAiOjE2ODk3OTQ1OTQsIm5iZiI6MTY4OTc5MDk5NCwianRpIjoiWElNdXMySFBsaW1ESVFzQyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.y1IR7dUn6kbsdRShY398PUnNdY6eR9LkO9eSxFcT6Uc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nama",
+									"value": "zikru",
+									"type": "text"
+								},
+								{
+									"key": "nim",
+									"value": "1901010249",
+									"type": "text"
+								},
+								{
+									"key": "alamat",
+									"value": "telagawaru",
+									"type": "text"
+								},
+								{
+									"key": "no_hp",
+									"value": "087765443212",
+									"type": "text"
+								},
+								{
+									"key": "angkatan",
+									"value": "2019",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/mahasiswa",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"mahasiswa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "detail data mahasiswa",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjg5NzkwOTk0LCJleHAiOjE2ODk3OTQ1OTQsIm5iZiI6MTY4OTc5MDk5NCwianRpIjoiWElNdXMySFBsaW1ESVFzQyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.y1IR7dUn6kbsdRShY398PUnNdY6eR9LkO9eSxFcT6Uc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/mahasiswa/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"mahasiswa",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update data mahasiswa",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjg5NzkwOTk0LCJleHAiOjE2ODk3OTQ1OTQsIm5iZiI6MTY4OTc5MDk5NCwianRpIjoiWElNdXMySFBsaW1ESVFzQyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.y1IR7dUn6kbsdRShY398PUnNdY6eR9LkO9eSxFcT6Uc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nama",
+									"value": "zikru edit",
+									"type": "text"
+								},
+								{
+									"key": "nim",
+									"value": "1901010249",
+									"type": "text"
+								},
+								{
+									"key": "alamat",
+									"value": "telagawaru",
+									"type": "text"
+								},
+								{
+									"key": "no_hp",
+									"value": "087715882995",
+									"type": "text"
+								},
+								{
+									"key": "angkatan",
+									"value": "2019 edit",
+									"type": "text"
+								},
+								{
+									"key": "_method",
+									"value": "PATCH",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/mahasiswa/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"mahasiswa",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Hapus Mahasiswa",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjg5NzkwOTk0LCJleHAiOjE2ODk3OTQ1OTQsIm5iZiI6MTY4OTc5MDk5NCwianRpIjoiWElNdXMySFBsaW1ESVFzQyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.y1IR7dUn6kbsdRShY398PUnNdY6eR9LkO9eSxFcT6Uc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/mahasiswa/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"mahasiswa",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "NILAI API",
+			"item": [
+				{
+					"name": "Menampilkan semua data nilai",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjg5NzkwOTk0LCJleHAiOjE2ODk3OTQ1OTQsIm5iZiI6MTY4OTc5MDk5NCwianRpIjoiWElNdXMySFBsaW1ESVFzQyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.y1IR7dUn6kbsdRShY398PUnNdY6eR9LkO9eSxFcT6Uc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/nilai",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"nilai"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "tambah nilai",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjg5NzkwOTk0LCJleHAiOjE2ODk3OTQ1OTQsIm5iZiI6MTY4OTc5MDk5NCwianRpIjoiWElNdXMySFBsaW1ESVFzQyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.y1IR7dUn6kbsdRShY398PUnNdY6eR9LkO9eSxFcT6Uc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "absen",
+									"value": "50",
+									"type": "text"
+								},
+								{
+									"key": "tugas",
+									"value": "70",
+									"type": "text"
+								},
+								{
+									"key": "harian",
+									"value": "80",
+									"type": "text"
+								},
+								{
+									"key": "uts",
+									"value": "90",
+									"type": "text"
+								},
+								{
+									"key": "uas",
+									"value": "90",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/nilai",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"nilai"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "detail nilai",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjg5NzkwOTk0LCJleHAiOjE2ODk3OTQ1OTQsIm5iZiI6MTY4OTc5MDk5NCwianRpIjoiWElNdXMySFBsaW1ESVFzQyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.y1IR7dUn6kbsdRShY398PUnNdY6eR9LkO9eSxFcT6Uc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/nilai/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"nilai",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update nilai",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjg5NzkwOTk0LCJleHAiOjE2ODk3OTQ1OTQsIm5iZiI6MTY4OTc5MDk5NCwianRpIjoiWElNdXMySFBsaW1ESVFzQyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.y1IR7dUn6kbsdRShY398PUnNdY6eR9LkO9eSxFcT6Uc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "absen",
+									"value": "edit",
+									"type": "text"
+								},
+								{
+									"key": "tugas",
+									"value": "edit",
+									"type": "text"
+								},
+								{
+									"key": "harian",
+									"value": "edit",
+									"type": "text"
+								},
+								{
+									"key": "uts",
+									"value": "edit",
+									"type": "text"
+								},
+								{
+									"key": "uas",
+									"value": "edit",
+									"type": "text"
+								},
+								{
+									"key": "_method",
+									"value": "PATCH",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/nilai/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"nilai",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "hapus nilai",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjg5NzkwOTk0LCJleHAiOjE2ODk3OTQ1OTQsIm5iZiI6MTY4OTc5MDk5NCwianRpIjoiWElNdXMySFBsaW1ESVFzQyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.y1IR7dUn6kbsdRShY398PUnNdY6eR9LkO9eSxFcT6Uc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/nilai/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"nilai",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "JURUSAN API",
+			"item": [
+				{
+					"name": "menampilkan semua jurusan",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjg5NzkwOTk0LCJleHAiOjE2ODk3OTQ1OTQsIm5iZiI6MTY4OTc5MDk5NCwianRpIjoiWElNdXMySFBsaW1ESVFzQyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.y1IR7dUn6kbsdRShY398PUnNdY6eR9LkO9eSxFcT6Uc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/jurusan",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"jurusan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "tambah jurusan",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjg5NzkwOTk0LCJleHAiOjE2ODk3OTQ1OTQsIm5iZiI6MTY4OTc5MDk5NCwianRpIjoiWElNdXMySFBsaW1ESVFzQyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.y1IR7dUn6kbsdRShY398PUnNdY6eR9LkO9eSxFcT6Uc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nama_jurusan",
+									"value": "RPL",
+									"type": "text"
+								},
+								{
+									"key": "kode_jurusan",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "akreditasi",
+									"value": "Baik",
+									"type": "text"
+								},
+								{
+									"key": "tahun_terbit",
+									"value": "2018",
+									"type": "text"
+								},
+								{
+									"key": "ketua_jurusan",
+									"value": "zikru",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/jurusan",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"jurusan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "detail jurusan",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjg5NzkwOTk0LCJleHAiOjE2ODk3OTQ1OTQsIm5iZiI6MTY4OTc5MDk5NCwianRpIjoiWElNdXMySFBsaW1ESVFzQyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.y1IR7dUn6kbsdRShY398PUnNdY6eR9LkO9eSxFcT6Uc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/jurusan/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"jurusan",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update jurusan",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjg5NzkwOTk0LCJleHAiOjE2ODk3OTQ1OTQsIm5iZiI6MTY4OTc5MDk5NCwianRpIjoiWElNdXMySFBsaW1ESVFzQyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.y1IR7dUn6kbsdRShY398PUnNdY6eR9LkO9eSxFcT6Uc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nama_jurusan",
+									"value": "JARINGAN",
+									"type": "text"
+								},
+								{
+									"key": "kode_jurusan",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "akreditasi",
+									"value": "Baik",
+									"type": "text"
+								},
+								{
+									"key": "tahun_terbit",
+									"value": "2011",
+									"type": "text"
+								},
+								{
+									"key": "ketua_jurusan",
+									"value": "zikru edit",
+									"type": "text"
+								},
+								{
+									"key": "_method",
+									"value": "PATCH",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/jurusan/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"jurusan",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "hapus jurusan",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjg5NzkwOTk0LCJleHAiOjE2ODk3OTQ1OTQsIm5iZiI6MTY4OTc5MDk5NCwianRpIjoiWElNdXMySFBsaW1ESVFzQyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.y1IR7dUn6kbsdRShY398PUnNdY6eR9LkO9eSxFcT6Uc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/jurusan/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"jurusan",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "zikru",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "zikru@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "zikru123",
+							"type": "text"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "zikru123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjg5Nzg3NTY1LCJleHAiOjE2ODk3OTExNjUsIm5iZiI6MTY4OTc4NzU2NSwianRpIjoiTndkRlFXUWlnSFIzblprQyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.MHMWzc-HOKTETp54kDY06q1T3_H0vgcX5UNMrSQaJ3k",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "zikru@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "zikru123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjg5Nzg3NTY1LCJleHAiOjE2ODk3OTExNjUsIm5iZiI6MTY4OTc4NzU2NSwianRpIjoiTndkRlFXUWlnSFIzblprQyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.MHMWzc-HOKTETp54kDY06q1T3_H0vgcX5UNMrSQaJ3k",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman.",
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNjg5Nzg4MDAwLCJleHAiOjE2ODk3OTE2MDAsIm5iZiI6MTY4OTc4ODAwMCwianRpIjoicDdsb2doYlUzZGEyUFZ4aCIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.inmzt0HxTBstSOLnvcbyGBSP7qqaDqTLAtx24GZLQbY",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/logout",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
